@@ -110,15 +110,6 @@
       {{>introduction}}
    
 
-  <div id="arrows" style="display:none;">
-    <a href="#" id="previous">
-      Previous
-    </a>
-    <a href="#" id="next">
-      Next
-    </a>
-  </div>
-
   <div id="steps" style="display:none;">
     Steps Go Here
   </div>
@@ -201,45 +192,46 @@
 <template name="step">
 
 
-  <div class="section group">
-  <div class="step">
-    <h4>Choose a {{name}}</h4>
-  <div class="col span_1_of_3">
+  <div class="section group" >
+    <div class="step" id="choose">
+      <h4>Choose a {{name}}</h4>
+      <div class="col span_1_of_3" id="step">
   
-    <div class="step_ingredients section group">
-      {{#each ingredients}}
-        <div class="col span_1_of_3">
-          <a href="#" id="{{shortname}}" class="ingredient">
-            <img src="/images/ingredients/_{{shortname}}.jpg" />
-            <br />
-            {{name}}
-            <span class="
-              {{#if selected}}
-                selected
-              {{else}}
+          <div class="step_ingredients section group">
+            {{#each ingredients}}
+            <div class="col span_1_of_3">
+              <a href="#" id="{{shortname}}" class="ingredient">
+              <img src="/images/ingredients/_{{shortname}}.jpg" />
+               <br />
+               {{name}}
+                <span class="
+                 {{#if selected}}
+                   selected
+                 {{else}}
                 unselected
-              {{/if}}
-              ">
-              <span>Selected!</span>
-            </span>
-        </div>
+                 {{/if}}
+                 ">
+                 <span>Selected!</span>
+                 </span>
+              </div>
       {{/each}}
     </ul>
+    </div>
     <div class="section group">
   <div class="col span_1_of_3">
   &nbsp;</div>
-  <div class="col span_1_of_3">
-    <div style="float:left;">
-    <img src="img/arrowlt.png" width="32" height="92"></div>
-  <div style="float:right;">
-    <img src="img/arrowrt.png" width="32" height="92"></div>
+  <div class="col span_1_of_3" id="nav">
+    <div style="float:left;">  <a href="#" >
+  <img id="previous" src="img/arrowlt.png" width="32" height="92"></a>
     </div>
-  <div class="col span_1_of_3">
-  &nbsp;</div>
+  <div style="float:right;">
+    <a href="#"> <img id="next" src="img/arrowrt.png" width="32" height="92"></a></div>
+ 
 
       </div>
   </div>
-
+    </div>
+    </div>
 </template>
 
 <template name="recipe">
