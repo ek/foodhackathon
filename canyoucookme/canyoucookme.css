@@ -14,7 +14,7 @@ border-radius: 25px; color: #ffffff; padding: 10px 15px; font-size: 32px; line-h
 #start_button:hover{width:30%; margin-left: auto; margin-right: auto; background-color: #FF6700; border-style: solid; border-width: 1px;-moz-border-radius: 25px;
 border-radius: 25px; color: #ffffff;}
 
-#nav {position: absolute; left: 25%; top: 20px; width:50%; z-index: 1; }
+#nav {position: absolute; left: 0%; top: 20px; width:100%; z-index: 1; }
 #nav img { height: 42px; }
 #next {
   position: relative;
