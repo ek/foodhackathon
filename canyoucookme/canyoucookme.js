@@ -161,15 +161,15 @@ if (Meteor.isClient) {
     recipesHandler: function(data) {
       console.log(data);
       htmlString = "";
-      // for(i=0;i<data.matches.length;i++) {
-        m = data.matches[0];
+      m = data.matches[0];
+      if(m.smallImageUrls[0] != false) {
         m.image_url = m.smallImageUrls[0];
         m.image_url = m.image_url.replace('.s.jpg','.xl.jpg');
-        // insert template
-        $("#steps").append(Meteor.render(function() {
-          return Template.recipe(m);
-        }));
-      // }
+      }
+      // insert template
+      $("#steps").append(Meteor.render(function() {
+        return Template.recipe(m);
+      }));
       $("#loading").hide();
     }
 
