@@ -191,7 +191,12 @@
 </template>
 
 <template name="step">
-  
+   
+    <div id="title"><a href="canyoucookme.html">
+    <h1 id="title" style="font-size:25px">unHungry.me</h1>
+      <h3 id="subtitle" style="font-size:20px">Cook what's in your kitchen.</h3></a>
+    </div>
+ <div id="maincontent">
   <div class="section group" >
     <div class="step" id="choose">
       <h4>Choose a {{name}}</h4>
@@ -218,7 +223,7 @@
       </div>
     </div>
   </div>
-
+</div>
   <div class="section group">
     <div class="col span_1_of_3">
       &nbsp;
@@ -240,6 +245,11 @@
 </template>
 
 <template name="recipe">
+    <div id="title"><a href="canyoucookme.html">
+    <h1 id="title" style="font-size:25px">unHungry.me</h1>
+      <h3 id="subtitle" style="font-size:20px">Cook what's in your kitchen.</h3></a>
+    </div>
+ <div id="maincontent">
   <div class="recipe" id="recipe">
     <h2>{{recipeName}}</h1>
     <div class="attributes">
@@ -255,5 +265,6 @@
         {{/each}}
       </ul>
   </div>
+</div>
 </template>
 

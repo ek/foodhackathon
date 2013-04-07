@@ -19,7 +19,8 @@ border-radius: 25px; color: #ffffff;}
   z-index: 100;
 }
 #step {position: relative; width:100%;}
-#choose h4{text-align: center; font-size: 2em}
+
+#choose h4{text-align: center; font-size: 2em; padding-top: 50px;}
 #recipe{position: relative; padding-left: 10%}
 #banner {
   position: absolute;
@@ -38,3 +39,4 @@ border-radius: 25px; color: #ffffff;}
   background: white;
   background: rgba(255,255,255,0.95);
 }
+#title{padding-top: 0px;}
