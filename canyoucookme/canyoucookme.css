@@ -37,6 +37,21 @@ border-radius: 25px; color: #ffffff;}
 
 #choose h4{text-align: center; line-height: 35px; font-size: 52px; padding-top: 0px; margin-bottom: 20px; }
 #recipe{position: relative; padding-left: 10%}
+#recipe img {
+  width: 500px;
+}
+#recipe ul li {
+  font-size: 22px;
+  line-height: 32px;
+  display: block;
+  font-family: "aw-conqueror-carved-one", serif;
+}
+.ingredient_list li {
+  font-size: 22px;
+  line-height: 32px;
+  display: block;
+  font-family: "aw-conqueror-carved-one", serif;
+}
 #banner {
   position: absolute;
   top: 0;
