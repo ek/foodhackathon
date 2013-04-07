@@ -51,11 +51,11 @@ if (Meteor.isClient) {
   var ingredients = [
     { name: 'Protiens', ingredients: 
       [ 
-        { name: 'Beef', shortname: 'beef', selected: false },
-        { name: 'Chicken', shortname: 'chicken', selected: false },
-        { name: 'Pork', shortname: 'pork', selected: false },
-        { name: 'Fish', shortname: 'fish', selected: false },
-        { name: 'Lamb', shortname: 'lamb', selected: false },
+        { name: 'Beef', shortname: 'ground-beef', selected: false },
+        { name: 'Chicken', shortname: 'chicken-breast', selected: false },
+        { name: 'Pork', shortname: 'pork-chop', selected: false },
+        { name: 'Fish', shortname: 'salmon', selected: false },
+        { name: 'Lamb', shortname: 'steak', selected: false },
         { name: 'Beans', shortname: 'beans', selected: false },
         { name: 'Tofu', shortname: 'tofu', selected: false  }
       ]
@@ -65,10 +65,10 @@ if (Meteor.isClient) {
         { name: 'Tomato', shortname: 'tomato', selected: false },
         { name: 'Carrot', shortname: 'carrot', selected: false },
         { name: 'Spinach', shortname: 'spinach', selected: false },
-        { name: 'Potato', shortname: 'potato', selected: false },
+        { name: 'Potato', shortname: 'potatoes', selected: false },
         { name: 'Bell Pepper', shortname: 'bell_pepper', selected: false },
         { name: 'Mushrooms', shortname: 'mushrooms', selected: false },
-        { name: 'Broccoli', shortname: 'broccoli', selected: false  }
+        { name: 'Broccoli', shortname: 'brocolli', selected: false  }
       ]
     },
     { name: 'Grains', ingredients: 
@@ -77,31 +77,31 @@ if (Meteor.isClient) {
         { name: 'Rice', shortname: 'rice', selected: false },
         { name: 'Bread', shortname: 'bread', selected: false },
         { name: 'Quinoa', shortname: 'quinoa', selected: false },
-        { name: 'Cous Cous', shortname: 'cous_cous', selected: false },
+        { name: 'Cous Cous', shortname: 'couscous', selected: false },
         { name: 'Grits', shortname: 'grits', selected: false },
-        { name: 'Tortilla', shortname: 'tortilla', selected: false  }
+        { name: 'Tortilla', shortname: 'tortillas', selected: false  }
       ]
     },
     { name: 'Dairy', ingredients: 
       [ 
-        { name: 'Cheddar Cheese', shortname: 'cheddar_cheese', selected: false },
+        { name: 'Cheddar Cheese', shortname: 'cheddar-cheese', selected: false },
         { name: 'Milk', shortname: 'milk', selected: false },
-        { name: 'Parmesan Cheese', shortname: 'parmesan_cheese', selected: false },
+        { name: 'Parmesan Cheese', shortname: 'parmesan-cheese', selected: false },
         { name: 'Yogurt', shortname: 'yogurt', selected: false },
         { name: 'Egg', shortname: 'egg', selected: false },
-        { name: 'Blue Cheese', shortname: 'blue_cheese', selected: false },
-        { name: 'Goat Cheese', shortname: 'goat_cheese', selected: false  }
+        { name: 'Blue Cheese', shortname: 'blue-cheese', selected: false },
+        { name: 'Goat Cheese', shortname: 'goat-cheese', selected: false  }
       ]
     },
     { name: 'Condiments', ingredients:
       [ 
         { name: 'Mustard', shortname: 'mustard', selected: false },
-        { name: 'Red wine vinegar', shortname: 'red_wine_vinegar', selected: false },
-        { name: 'Balsamic Vinegar', shortname: 'balsamic_vinegar', selected: false },
-        { name: 'Maple Syrup', shortname: 'maple_syrup', selected: false },
-        { name: 'Mayo', shortname: 'mayo', selected: false },
-        { name: 'Peanut Butter', shortname: 'peanut_butter', selected: false },
-        { name: 'Soy Sauce', shortname: 'soy_sauce', selected: false  }
+        { name: 'Red wine vinegar', shortname: 'red-wine-vinegar', selected: false },
+        { name: 'Balsamic Vinegar', shortname: 'balsamic-vinegar', selected: false },
+        { name: 'Maple Syrup', shortname: 'maple-syrup', selected: false },
+        { name: 'Mayo', shortname: 'mayonnaise', selected: false },
+        { name: 'Peanut Butter', shortname: 'peanut-butter', selected: false },
+        { name: 'Soy Sauce', shortname: 'soy-sauce', selected: false  }
       ]
     }
   ];
