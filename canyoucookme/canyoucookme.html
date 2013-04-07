@@ -4,7 +4,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
   -->
+  <!--
   <script src="ingredient-list.js"></script>
+  -->
+
+  <script src="/js/jquery.masonry.min.js" ></script>
 
   <!-- From Elance Guy -->
     <meta charset="utf-8">
@@ -15,7 +19,7 @@
 
 
 
-  <title>unhungry.me</title>
+  <title>unHungry.me</title>
 
 
   <meta http-equiv="cleartype" content="on">
@@ -191,20 +195,13 @@
 </template>
 
 <template name="step">
-   
-    <div id="title"><a href="canyoucookme.html">
-    <h1 id="title" style="font-size:25px">unHungry.me</h1>
-      <h3 id="subtitle" style="font-size:20px">Cook what's in your kitchen.</h3></a>
-    </div>
- <div id="maincontent">
   <div class="section group" >
     <div class="step" id="choose">
-      <h4>Choose a {{name}}</h4>
-      <div class="col span_1_of_3" id="step">
+      <h4>{{name}}</h4>
+      <div class="" id="step">
         <div class="step_ingredients section group">
           {{#each ingredients}}
-            <div class="col span_1_of_3">
-              <a href="#" id="{{shortname}}" class="ingredient">
+            <a href="#" id="{{shortname}}" class="ingredient {{col}}">
               <img src="/images/ingredients/_{{shortname}}.jpg" />
                <br />
                {{name}}
@@ -217,29 +214,20 @@
                  ">
                 <span>Selected!</span>
               </span>
-            </div>
+            </a>
           {{/each}}
-        </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
-  <div class="section group">
-    <div class="col span_1_of_3">
-      &nbsp;
-    </div>
-    <div class="col span_1_of_3" id="nav">
-      <div style="float:left;">
-        <a href="#" >
-          <img id="previous" src="img/arrowlt.png" width="32" height="92">
-        </a>
-      </div>
-      <div style="float:right;">
-        <a href="#">
-          <img id="next" src="img/arrowrt.png" width="32" height="92">
-        </a>
-      </div>
-    </div>
+
+  <div class="" id="nav">
+    <a id="previous" href="#">
+      <img id="" src="img/arrowlt.png" width="32" height="92">
+    </a>
+    <a id="next" href="#">
+      <img id="" src="img/arrowrt.png" width="32" height="92">
+    </a>
   </div>
 
 </template>

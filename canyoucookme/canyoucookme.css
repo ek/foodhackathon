@@ -14,10 +14,25 @@ border-radius: 25px; color: #ffffff; padding: 10px 15px; font-size: 32px; line-h
 #start_button:hover{width:30%; margin-left: auto; margin-right: auto; background-color: #FF6700; border-style: solid; border-width: 1px;-moz-border-radius: 25px;
 border-radius: 25px; color: #ffffff;}
 
-#nav {position: absolute; left: -10%; top: 100px; width:110%; z-index: 1; }
-.step_ingredients * {
-  z-index: 100;
+#nav {position: absolute; left: -5%; top: 100px; width:110%; z-index: 1; }
+
+#next {
+  position: relative;
+  float: right;
 }
+.ingredient {
+  width: 120px;
+  margin: 10px;
+  float: left;
+}
+.step_ingredients {
+  display: block;
+  position: relative;
+}
+.step_ingredients .col1 { width: 190px; }
+.step_ingredients .col2 { width: 250px; }
+.step_ingredients .col3 { width: 350px; }
+
 #step {position: relative; width:100%;}
 
 #choose h4{text-align: center; font-size: 2em; padding-top: 50px;}
@@ -26,10 +41,10 @@ border-radius: 25px; color: #ffffff;}
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   border: 0 !important;
   padding: 0 !important;
   top: -25px;
+  height: 670px;
 }
 #headcontainer header {
   background: white;
