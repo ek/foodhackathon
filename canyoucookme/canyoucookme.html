@@ -36,6 +36,7 @@
 
   <!-- Stylesheets -->
 
+
   <link rel="stylesheet" href="css/style.css" media="all">
 
   <link rel="stylesheet" href="css/responsivegridsystem.css" media="all">
@@ -91,9 +92,32 @@
 </head>
 
 <body>
+    <div id="skiptomain"><a href="#maincontent">skip to main content</a></div>
+
+
+
+<div id="wrapper">
+
+  <div id="headcontainer">
+
+    <header>
+
+        <h1 id="title">Unhungry.me</h1>
+        <h3 id="subtitle">Cook what's in your kitchen.</h3>
+    <img src="/images/cover.jpg" id="banner" />
+  
+    </header>
+
+  </div>
+
+  <div id="maincontentcontainer">
+
+    <div id="maincontent">
+
   {{>introduction}}
 
-  
+
+
   <div id="arrows" style="display:none;">
     <a href="#" id="previous">
       Previous
@@ -166,27 +190,7 @@
  <!-- From Elance Guy -->
 
 
-<div id="skiptomain"><a href="#maincontent">skip to main content</a></div>
 
-
-
-<div id="wrapper">
-
-  <div id="headcontainer">
-
-    <header>
-
-        <h1 id="title">Unhungry.me</h1>
-        <h3 id="subtitle">Cook what's in your kitchen.</h3>
-    <img src="/images/cover.jpg" id="banner" />
-  
-    </header>
-
-  </div>
-
-  <div id="maincontentcontainer">
-
-    <div id="maincontent">
 
     <div style="text-align:center;">
     <h2>1. You Choose</h2>
@@ -206,13 +210,18 @@
 </template>
 
 <template name="step">
+
+
+  <div class="section group">
   <div class="step">
     <h4>{{name}}</h4>
-    <ul class="step_ingredients">
+  <div class="col span_1_of_3">
+  
+    <div class="step_ingredients section group">
       {{#each ingredients}}
-        <p>
+        <div class="col span_1_of_3">
           <a href="#" id="{{shortname}}" class="ingredient">
-            <img src="/images/ingredients/{{shortname}}.jpg" />
+            <img src="/images/ingredients/_{{shortname}}.jpg" />
             <br />
             {{name}}
             <span class="
@@ -224,7 +233,7 @@
               ">
               <span>Selected!</span>
             </span>
-        </p>
+        </div>
       {{/each}}
     </ul>
   </div>
