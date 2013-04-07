@@ -168,6 +168,7 @@ if (Meteor.isClient) {
     
     callYummlyAPI: function() {
 
+      
       this.prepareQueryIngredients(this.query_length_limit);
 
       this.query = "requirePictures=true&q=" + encodeURIComponent(this.query_ingredients.join(','));
@@ -206,6 +207,8 @@ if (Meteor.isClient) {
 
     recipesHandler: function(data) {
       
+      $("#nav").hide();
+
       console.log(data);
       htmlString = "";
 
@@ -215,7 +218,7 @@ if (Meteor.isClient) {
 
         m = data.matches[0];
         
-        if(m.smallImageUrls[0] != false) {
+        if(m.smallImageUrls.length>0) {
           m.image_url = m.smallImageUrls[0];
           m.image_url = m.image_url.replace('.s.jpg','.xl.jpg');
         }
