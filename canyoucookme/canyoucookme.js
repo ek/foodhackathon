@@ -93,7 +93,7 @@ if (Meteor.isClient) {
     { name: 'Produce', ingredients: 
       [ 
         { name: 'Tomato', shortname: 'tomato', selected: false, col: 'col1' },
-        { name: 'Carrot', shortname: 'carrot', selected: false, col: 'col1' },
+        { name: 'Carrot', shortname: 'carrots', selected: false, col: 'col1' },
         { name: 'Spinach', shortname: 'spinach', selected: false, col: 'col1' },
         { name: 'Potato', shortname: 'potatoes', selected: false, col: 'col1' },
         { name: 'Bell Pepper', shortname: 'bell_pepper', selected: false, col: 'col1' },
