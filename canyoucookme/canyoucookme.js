@@ -1,5 +1,18 @@
 if (Meteor.isClient) {
   
+  Array.prototype.shuffle = function() {
+    var i = this.length, j, tempi, tempj;
+    if ( i == 0 ) return this;
+    while ( --i ) {
+       j       = Math.floor( Math.random() * ( i + 1 ) );
+       tempi   = this[i];
+       tempj   = this[j];
+       this[i] = tempj;
+       this[j] = tempi;
+    }
+    return this;
+  }
+
   Template.introduction.events({
     'click #start_button' : function () {
       changeStep(0);
@@ -149,12 +162,13 @@ if (Meteor.isClient) {
       }).done(function(data) {
         yummly.recipesHandler(data);
       });
+
     },
 
     prepareQueryIngredients: function(max_length) {
 
       this.query_ingredients = [];
-      
+
       // add selected ingredients to query
       for(i=0;i<ingredients.length;i++) {
         for(j=0;j<ingredients[i].ingredients.length;j++) {
@@ -165,6 +179,8 @@ if (Meteor.isClient) {
         }
       }
 
+      this.query_ingredients.shuffle();
+
       if(this.query_ingredients.length > max_length) {
         this.query_ingredients.length = max_length;
       }
@@ -172,8 +188,10 @@ if (Meteor.isClient) {
     },
 
     recipesHandler: function(data) {
+      
       console.log(data);
       htmlString = "";
+
       if(data.matches.length > 0) {
         
         console.log('found recipe(s) with '+ this.query_length_limit +' items in search.' );
@@ -193,7 +211,7 @@ if (Meteor.isClient) {
         $("#loading").hide();
 
       } else {
-        
+
         // ZERO RESULTS!
         // remove selected parts of queue
         // add selected ingredients to query

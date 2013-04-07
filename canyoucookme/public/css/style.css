@@ -223,7 +223,7 @@ line-height: 25px;
 h1 {
 	font-family: "aw-conqueror-carved-one", sans-serif;
 	font-weight: 300;
-	font-size: 36px;
+	font-size: 52px;
 	line-height: normal;
 	color: #000;
 }
@@ -244,7 +244,8 @@ h3 {
 
 #title {
 	text-align: center;
-	color: #999;
+	color: #000000;
+  font-size: 82px;
   font-family: "adelle";
 } 
 
@@ -252,8 +253,7 @@ h3 {
 #subtitle {
 	text-align: center;
 	font-size: 28px;
-	font-style:italic;
-	color: #999;
+	color: #FF3600;
 }
 
 #bodytext {
@@ -283,9 +283,6 @@ font-size: 21px;
 color: #333;
 }
 
-h1 a {
-color: #333;
-}
 
 /*  SECTIONS  */
 .section {
