@@ -40,17 +40,17 @@ border-radius: 25px; color: #ffffff;}
 #recipe img {
   width: 500px;
 }
-#recipe ul li {
-  font-size: 22px;
-  line-height: 32px;
-  display: block;
-  font-family: "aw-conqueror-carved-one", serif;
+#recipe h2 {
+  text-align: center;
+  font-size: 38px;
 }
-.ingredient_list li {
-  font-size: 22px;
-  line-height: 32px;
+.recipe ul.ingredient_list li {
+  font-size: 15px;
+  line-height: 20px;
   display: block;
   font-family: "aw-conqueror-carved-one", serif;
+  position:relative;
+  clear: both;
 }
 #banner {
   position: absolute;

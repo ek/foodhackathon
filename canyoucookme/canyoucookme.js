@@ -60,12 +60,13 @@ if (Meteor.isClient) {
       // change step UI to previous step
       changeStep(currentStepNumber - 1);
     });
-    
-    var masonryTimeout = window.setTimeout('runMasonry();', 100);
+    $('.step_ingredients').hide();
+    var masonryTimeout = window.setTimeout('runMasonry();', 500);
 
   }
 
   runMasonry = function() {
+    $('.step_ingredients').show();
     $('.step_ingredients').masonry({
       // options
       itemSelector : '.ingredient',
