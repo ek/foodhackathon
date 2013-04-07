@@ -90,7 +90,7 @@ if (Meteor.isClient) {
         { name: 'Yogurt', shortname: 'yogurt', selected: false },
         { name: 'Egg', shortname: 'egg', selected: false },
         { name: 'Blue Cheese', shortname: 'blue_cheese', selected: false },
-        { name: 'Mozzarella Cheese', shortname: 'mozzarella_cheese', selected: false  }
+        { name: 'Goat Cheese', shortname: 'goat_cheese', selected: false  }
       ]
     },
     { name: 'Condiments', ingredients:

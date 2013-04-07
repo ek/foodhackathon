@@ -108,8 +108,7 @@
   <div id="maincontentcontainer">
     <div id="maincontent">
       {{>introduction}}
-    </div>
-  </div>
+   
 
   <div id="arrows" style="display:none;">
     <a href="#" id="previous">
@@ -129,14 +128,15 @@
     <h5>Loading Recipes</h5>
   </div>
 
-
+ </div>
+  </div>
 
 
   <div id="footercontainer">
 
     <footer class="group">
 
-    <p style="float: left";>How it Works</p>
+    <a href="/howitworks.html" <p style="float: left";>How it Works</p></a>
     <p style="float: right";>Unhungry.me ©2013</p>
       
     </footer>
@@ -203,7 +203,7 @@
 
   <div class="section group">
   <div class="step">
-    <h4>{{name}}</h4>
+    <h4>Choose a {{name}}</h4>
   <div class="col span_1_of_3">
   
     <div class="step_ingredients section group">
@@ -243,7 +243,7 @@
 </template>
 
 <template name="recipe">
-  <div class="recipe">
+  <div class="recipe" id="recipe">
     <h2>{{recipeName}}</h1>
     <div class="attributes">
       <img src="{{image_url}}" />
