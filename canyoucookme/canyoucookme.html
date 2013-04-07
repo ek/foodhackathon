@@ -76,9 +76,7 @@
   <div class="recipe">
     <h2>{{recipeName}}</h1>
     <div class="attributes">
-      {{#each smallImageUrls}}
-        <img src="{{.}}" />
-      {{/each}}
+      <img src="{{image_url}}" />
       <h3>Source: {{sourceDisplayName}}</h3>
       <h3>Cook Time: {{totalTimeInSeconds}} seconds<h3>
       <h3>Rating: {{rating}}</h3>
@@ -86,7 +84,7 @@
       <h4>Ingredients:</h4>
       <ul>
         {{#each ingredients}}
-          <li>{{.}}</li>  
+          <li>{{.}}</li>
         {{/each}}
       </ul>
   </div>

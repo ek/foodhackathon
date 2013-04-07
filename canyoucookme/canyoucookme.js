@@ -130,7 +130,7 @@ if (Meteor.isClient) {
   yummly = {
     yummly_app_id: "190058ae",
     yummly_app_key: "3cf06ca8c34982f0e8397d7eea914997",
-    query: "requirePictures=true",
+    query: "",
     callYummlyAPI: function() {
 
       // add selected ingredients to query
@@ -138,10 +138,12 @@ if (Meteor.isClient) {
         for(j=0;j<ingredients[i].ingredients.length;j++) {
           ingred = ingredients[i].ingredients[j];
           if(ingred.selected == true) {
-            this.query += "&allowedIngredient[]="+ingredients[i].ingredients[j].name;
+            this.query += ingredients[i].ingredients[j].name + ",";
           }
         }
       }
+
+      this.query = "requirePictures=true&q=" + encodeURIComponent(this.query);
 
       console.log(this.query);
 
@@ -160,6 +162,8 @@ if (Meteor.isClient) {
       htmlString = "";
       for(i=0;i<data.matches.length;i++) {
         m = data.matches[i];
+        m.image_url = m.smallImageUrls[0];
+        m.image_url = m.image_url.replace('.s.jpg','.xl.jpg');
         // insert template
         $("#steps").append(Meteor.render(function() {
           return Template.recipe(m);
