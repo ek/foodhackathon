@@ -1,0 +1,379 @@
+/* html5reset.css - 01/11/2011 */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+	display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000; 
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration:  line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;   
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+body {
+	background-color: #fff;
+	margin: 0;
+}
+
+.container {
+padding-left: auto;
+padding-right: auto;
+}
+
+.row {
+width: 100%;
+max-width: 1024px;
+min-width: 755px;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.onecol, .twocol {
+margin-right: auto;
+margin-left: auto;
+float:none;
+text-align:center;
+min-height: 1px;
+}
+
+.row .onecol {
+width: 18%;
+}
+
+.row .twocol {
+width: 13.45%;
+}
+
+img, object, embed {
+max-width: 100%;
+}
+
+#banner {/* This centers the image */
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 25px;
+/* This adds the border */
+padding:4px;
+border:double;
+border-color: #999;
+border-width: 3px;
+background-color:#fff;
+}
+
+img {
+	height: auto;
+}
+
+.header{
+	width: 96%;
+	height: 390px;
+	background-color: #fff;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.headerinner{
+	width: 96%;
+	height: 75px;
+	background-color: #fff;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	text-align:center;
+}
+
+.header .logo {
+background-position: center;
+height: 100%;
+width: 100%;
+}
+
+#logo {
+display: block;
+text-indent: -9999px;
+}
+
+.header .head{
+width: 100%;
+height: 100%;
+}
+
+.content{
+	width: 100%;
+}
+
+.content .body{
+	width: 100%;
+	border-top: 3px double #999;
+	border-bottom: 3px double #999;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.content .sidebar{
+	width: 31.2%;
+	margin-right: 0;
+}
+
+.footer .foot{
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 50px;
+	padding-bottom: 20px;
+	width: 100%;
+}
+
+.foot{
+	text-align: center;
+}
+
+p {
+font-family: "Crimson Text", serif; 
+font-size: 16px;
+color: #333;
+line-height: 25px;
+}
+
+h1 {
+	font-family: "aw-conqueror-carved-one", sans-serif;
+	font-weight: 300;
+	font-size: 36px;
+	line-height: normal;
+	color: #000;
+}
+
+h2 {
+	font-family: "aw-conqueror-carved-one", sans-serif;
+	font-weight: 300;
+	font-size: 32px;
+	line-height: normal;
+	color: #000;
+}
+
+h3 {
+	font-family: "aw-conqueror-carved-one", serif;
+	font-size: 18px;
+	line-height: normal;
+}
+
+#title {
+	text-align: center;
+	color: #999;
+} 
+
+
+#subtitle {
+	text-align: center;
+	font-size: 28px;
+	font-style:italic;
+	color: #999;
+}
+
+#bodytext {
+	text-align:left;
+	line-height:normal;
+}
+
+a {
+font-family: 'Museo700-Regular', Helvetica, sans-serif;
+color: #333;
+}
+
+ul {
+list-style-type: none;
+}
+
+li {
+float: left;
+}
+
+ul a {
+display: block;
+padding-right: 32px;
+
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 21px;
+color: #333;
+}
+
+h1 a {
+color: #333;
+}
+
+/*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GRID OF THREE  */
+.span_3_of_3 {
+	width: 100%;
+}
+.span_2_of_3 {
+	width: 66.1%;
+}
+.span_1_of_3 {
+	width: 32.2%;
+}
+
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 100%;
+}
+.span_3_of_4 {
+	width: 74.6%;
+}
+.span_2_of_4 {
+	width: 49.2%;
+}
+.span_1_of_4 {
+	width: 23.8%;
+}
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+
+/* Smaller screens */
+
+@media only screen and (max-width: 1023px) {
+
+	body {
+	font-size: 0.8em;
+	line-height: 1.5em;
+	}
+	
+	}
+
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+	font-size: 16px;
+	-webkit-text-size-adjust: none;
+	}
+	
+	
+	.row, body, .container {
+	width: 100%;
+	min-width: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	
+	.row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+
+}

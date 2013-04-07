@@ -2,12 +2,12 @@
 .unselected {
   display: none;
 }#logo {position: relative; width:40%; border-style:solid;border-width:1px;padding-top:5%;padding-right:5%;}
-#logo {position: relative; width:40%; border-style:solid;border-width:1px;padding-top:5%;padding-right:5%;}
 #table {position: relative; width:80%; height: auto; border-style:solid; border-width:1px; margin-left:auto; margin-right: auto; margin-top:5%; }
 #left{position:absolute;top:50%; left:-5%; }
 #right{position:absolute; top:50%; right:-5%;}
+<<<<<<< HEAD
+=======
 #items ul{list-style: none;}
 #items ul li{display: inline; padding-left:2%;padding-right: 2%; padding-top: 1%; padding-bottom: 1%; }
 .menu{border-style: solid; border-width: 1px; width: 20%; }
-#start_button{width:30%; margin-left: auto; margin-right: auto; background-color: #C0C0C0; border-style: solid; border-width: 1px;-moz-border-radius: 15px;
-border-radius: 15px;
+>>>>>>> added templates for STEPS and MENU
