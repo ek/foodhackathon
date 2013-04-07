@@ -3,12 +3,114 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
   <script src="ingredient-list.js"></script>
+
+  <!-- From Elance Guy -->
+    <meta charset="utf-8">
+
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
+
+  <title>unhungry.me</title>
+
+
+  <meta http-equiv="cleartype" content="on">
+
+
+
+  <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+  <!-- Responsive and mobile friendly stuff -->
+
+  <meta name="HandheldFriendly" content="True">
+
+  <meta name="MobileOptimized" content="320">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+  <!-- Stylesheets -->
+
+
+  <link rel="stylesheet" href="css/style.css" media="all">
+
+  <link rel="stylesheet" href="css/responsivegridsystem.css" media="all">
+
+  <link rel="stylesheet" href="css/col.css" media="all">
+
+  <link rel="stylesheet" href="css/2cols.css" media="all">
+
+  <link rel="stylesheet" href="css/3cols.css" media="all">
+
+  <link rel="stylesheet" href="css/4cols.css" media="all">
+
+  <link rel="stylesheet" href="css/5cols.css" media="all">
+
+  <link rel="stylesheet" href="css/6cols.css" media="all">
+
+  <link rel="stylesheet" href="css/7cols.css" media="all">
+
+  <link rel="stylesheet" href="css/8cols.css" media="all">
+
+  <link rel="stylesheet" href="css/9cols.css" media="all">
+
+  <link rel="stylesheet" href="css/10cols.css" media="all">
+
+  <link rel="stylesheet" href="css/11cols.css" media="all">
+
+  <link rel="stylesheet" href="css/12cols.css" media="all">
+
+
+
+  <!-- Responsive Stylesheets -->
+
+  <link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/css/1024.css">
+
+  <link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/css/768.css">
+
+  <link rel="stylesheet" media="only screen and (max-width: 480px)" href="/css/480.css">
+
+
+
+  <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+
+  <script src="js/modernizr-2.5.3-min.js"></script>
+
+
+
+  <link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="//use.typekit.net/uwz6jht.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 </head>
 
 <body>
   
-  {{>introduction}}
-  
+  <div id="skiptomain"><a href="#maincontent">skip to main content</a></div>
+
+  <div id="wrapper">
+
+  <div id="headcontainer">
+    <header>
+      <h1 id="title">Unhungry.me</h1>
+      <h3 id="subtitle">Cook what's in your kitchen.</h3>
+      <img src="/images/cover.jpg" id="banner" />
+    </header>
+  </div>
+
+  <div id="maincontentcontainer">
+    <div id="maincontent">
+      {{>introduction}}
+    </div>
+  </div>
+
   <div id="arrows" style="display:none;">
     <a href="#" id="previous">
       Previous
@@ -17,23 +119,6 @@
       Next
     </a>
   </div>
-<<<<<<< HEAD
-=======
-  <div id="table">
-  	
-  	<!-- Navigation Arrows -->	
-  	<div id="left"><a href="#">Back<img id="back" src="#" /></a>	</div>
-  	<div id="right"><a href="#">Forward<img id="forward" src="#" /></a></div>
-  	<!-- Navigation Arrows -->	
-<div id="items">	  
-<ul>
-	<li><div class="menu"><a href="#"><img src="#"/><h1>RecipeName</h1><p>This is where the ingredients might go?</p></a></div></li>
-	<li><div class="menu"><a href="#"><img src="#"/><h1>RecipeName</h1><p>This is where the ingredients might go?</p></a></div></li>
-	<li><div class="menu"><a href="#"><img src="#"/><h1>RecipeName</h1><p>This is where the ingredients might go?</p></a></div></li>
-	<li><div class="menu"><a href="#"><img src="#"/><h1>RecipeName</h1><p>This is where the ingredients might go?</p></a></div></li>
-
-</ul>
->>>>>>> added templates for STEPS and MENU
 
   <div id="steps" style="display:none;">
     Steps Go Here
@@ -44,35 +129,88 @@
     <h5>Loading Recipes</h5>
   </div>
 
-<<<<<<< HEAD
+
+
+
+  <div id="footercontainer">
+
+    <footer class="group">
+
+    <p style="float: left";>How it Works</p>
+    <p style="float: right";>Unhungry.me ©2013</p>
+      
+    </footer>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+  <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+
+
+  <!--[if (lt IE 9) & (!IEMobile)]>
+
+  <script src="js/selectivizr-min.js"></script>
+
+  <![endif]-->
+
+
+
+
+
+  <!-- More Scripts-->
+
+  <script src="js/responsivegridsystem.js"></script>
+
 </body>
 
 <template name="introduction">
-  <div id="introduction">
-    <h1>UnHungry.Me</h1>
-    <h2>Cook what's in your kitchen</h2>
-    <div class="explaination">
-      <h3>How it works:</h3>
-      <ol>
-        <li>Tell us what is in your kitchen.</li>
-        <li>We instantly show you great recipes you can cook.</li>
-        <li>Cook and enjoy!</li>
-      </ol>
+ <!-- From Elance Guy -->
+    <div id="introduction" style="text-align:center;">
+    <h2>1. You Choose</h2>
+        <h3>10 or fewer ingredients that you have on hand.</h3>
+        <br>
+        <h2>2. We Curate</h2>
+        <h3>Three recipes based on what's in your kitchen.</h3>
+        <br>
+        <h2>3. You Vote</h2>
+        <h3>On your favorite recipe and start cooking!</h3>
+        <br>
+        <a href="#"><h1 id="start_button" style="text-transform: uppercase;">Start Cooking</h1></a>
     </div>
-    <a href="#" id="start_button">
-      Start!
-    </a>
+    </div>
+
   </div>
 </template>
 
 <template name="step">
+
+
+  <div class="section group">
   <div class="step">
     <h4>{{name}}</h4>
-    <ul class="step_ingredients">
+  <div class="col span_1_of_3">
+  
+    <div class="step_ingredients section group">
       {{#each ingredients}}
-        <p>
+        <div class="col span_1_of_3">
           <a href="#" id="{{shortname}}" class="ingredient">
-            <img src="/images/ingredients/{{shortname}}.jpg" />
+            <img src="/images/ingredients/_{{shortname}}.jpg" />
             <br />
             {{name}}
             <span class="
@@ -84,19 +222,35 @@
               ">
               <span>Selected!</span>
             </span>
-        </p>
+        </div>
       {{/each}}
+<<<<<<< HEAD
+    </div>
+=======
     </ul>
+    <div class="section group">
+  <div class="col span_1_of_3">
+  &nbsp;</div>
+  <div class="col span_1_of_3">
+    <div style="float:left;">
+    <img src="img/arrowlt.png" width="32" height="92"></div>
+  <div style="float:right;">
+    <img src="img/arrowrt.png" width="32" height="92"></div>
+    </div>
+  <div class="col span_1_of_3">
+  &nbsp;</div>
+
+      </div>
+>>>>>>> added nav arrows to step template
   </div>
+
 </template>
 
 <template name="recipe">
   <div class="recipe">
     <h2>{{recipeName}}</h1>
     <div class="attributes">
-      {{#each smallImageUrls}}
-        <img src="{{.}}" />
-      {{/each}}
+      <img src="{{image_url}}" />
       <h3>Source: {{sourceDisplayName}}</h3>
       <h3>Cook Time: {{totalTimeInSeconds}} seconds<h3>
       <h3>Rating: {{rating}}</h3>
@@ -104,56 +258,9 @@
       <h4>Ingredients:</h4>
       <ul>
         {{#each ingredients}}
-          <li>{{.}}</li>  
+          <li>{{.}}</li>
         {{/each}}
       </ul>
   </div>
 </template>
 
-=======
-</template>
-
-<template name="steps">
-  <div id="table">
-  	
-  	<!-- Navigation Arrows -->	
-  	<div id="left"><a href="#">Back<img id="back" src="#" /></a>	</div>
-  	<div id="right"><a href="#">Forward<img id="forward" src="#" /></a></div>
-  	<!-- Navigation Arrows -->	
-<div id="items">	  
-<ul>
-	<li><a href="#"><img src="#"/>Ingredient</a></li>
-	<li><a href="#"><img src="#"/>Ingredient</a></li>
-	<li><a href="#"><img src="#"/>Ingredient</a></li>
-	<li><a href="#"><img src="#"/>Ingredient</a></li>
-	<li><a href="#"><img src="#"/>Ingredient</a></li>
-	<li><a href="#"><img src="#"/>Ingredient</a></li>
-	<li><a href="#"><img src="#"/>Ingredient</a></li>
-	<li><a href="#"><img src="#"/>Ingredient</a></li>
-	<li><a href="#"><img src="#"/>Ingredient</a></li>
-</ul>
-
-  </div>
-
-
- </template>
-
- <template name="menu">
-  <div id="table">
-  	
-  	<!-- Navigation Arrows -->	
-  	<div id="left"><a href="#">Back<img id="back" src="#" /></a>	</div>
-  	<div id="right"><a href="#">Forward<img id="forward" src="#" /></a></div>
-  	<!-- Navigation Arrows -->	
-<div id="items">	  
-<ul>
-	<li><div class="menu"><a href="#"><img src="#"/><h1>RecipeName</h1><p>This is where the ingredients might go?</p></a></div></li>
-	<li><div class="menu"><a href="#"><img src="#"/><h1>RecipeName</h1><p>This is where the ingredients might go?</p></a></div></li>
-	<li><div class="menu"><a href="#"><img src="#"/><h1>RecipeName</h1><p>This is where the ingredients might go?</p></a></div></li>
-	<li><div class="menu"><a href="#"><img src="#"/><h1>RecipeName</h1><p>This is where the ingredients might go?</p></a></div></li>
-
-</ul>
-
-  </div>
- </template>
->>>>>>> added templates for STEPS and MENU
