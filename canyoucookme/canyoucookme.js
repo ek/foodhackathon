@@ -125,7 +125,6 @@ if (Meteor.isClient) {
         this.selected = true;
         target.children('.unselected').removeClass('unselected').addClass('selected');
       }
-
     }
   });
 
@@ -156,7 +155,7 @@ if (Meteor.isClient) {
       }).done(function(data) {
         yummly.recipesHandler(data);
       });
-      
+
     },
 
     recipesHandler: function(data) {
@@ -171,7 +170,7 @@ if (Meteor.isClient) {
           return Template.recipe(m);
         }));
       // }
-      $("#loading").show();
+      $("#loading").hide();
     }
 
   };
