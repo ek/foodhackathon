@@ -129,24 +129,18 @@ if (Meteor.isClient) {
   });
 
   yummly = {
+
     yummly_app_id: "190058ae",
     yummly_app_key: "3cf06ca8c34982f0e8397d7eea914997",
+    query_ingredients: [],
     query: "",
+    query_length_limit: 10,
+    
     callYummlyAPI: function() {
 
-      // add selected ingredients to query
-      for(i=0;i<ingredients.length;i++) {
-        for(j=0;j<ingredients[i].ingredients.length;j++) {
-          ingred = ingredients[i].ingredients[j];
-          if(ingred.selected == true) {
-            this.query += ingredients[i].ingredients[j].name + ",";
-          }
-        }
-      }
+      this.prepareQueryIngredients(this.query_length_limit);
 
-      this.query = "requirePictures=true&q=" + encodeURIComponent(this.query);
-
-      console.log(this.query);
+      this.query = "requirePictures=true&q=" + encodeURIComponent(this.query_ingredients.join(','));
 
       $.ajax({
         dataType: 'JSONP',
@@ -155,22 +149,69 @@ if (Meteor.isClient) {
       }).done(function(data) {
         yummly.recipesHandler(data);
       });
+    },
+
+    prepareQueryIngredients: function(max_length) {
+
+      this.query_ingredients = [];
+      
+      // add selected ingredients to query
+      for(i=0;i<ingredients.length;i++) {
+        for(j=0;j<ingredients[i].ingredients.length;j++) {
+          ingred = ingredients[i].ingredients[j];
+          if(ingred.selected == true) {
+            this.query_ingredients.push(ingredients[i].ingredients[j].name);
+          }
+        }
+      }
+
+      if(this.query_ingredients.length > max_length) {
+        this.query_ingredients.length = max_length;
+      }
 
     },
 
     recipesHandler: function(data) {
       console.log(data);
       htmlString = "";
-      m = data.matches[0];
-      if(m.smallImageUrls[0] != false) {
-        m.image_url = m.smallImageUrls[0];
-        m.image_url = m.image_url.replace('.s.jpg','.xl.jpg');
+      if(data.matches.length > 0) {
+        
+        console.log('found recipe(s) with '+ this.query_length_limit +' items in search.' );
+
+        m = data.matches[0];
+        
+        if(m.smallImageUrls[0] != false) {
+          m.image_url = m.smallImageUrls[0];
+          m.image_url = m.image_url.replace('.s.jpg','.xl.jpg');
+        }
+        
+        // insert template
+        $("#steps").append(Meteor.render(function() {
+          return Template.recipe(m);
+        }));
+        
+        $("#loading").hide();
+
+      } else {
+        
+        // ZERO RESULTS!
+        // remove selected parts of queue
+        // add selected ingredients to query
+        for(i=0;i<ingredients.length;i++) {
+          for(j=0;j<ingredients[i].ingredients.length;j++) {
+            ingred = ingredients[i].ingredients[j];
+            if(ingred.selected == true) {
+              this.query += ingredients[i].ingredients[j].name + ",";
+            }
+          }
+        }
+
+        // decrement the limit
+        this.query_length_limit = this.query_length_limit - 1;
+
+        yummly.callYummlyAPI();
+
       }
-      // insert template
-      $("#steps").append(Meteor.render(function() {
-        return Template.recipe(m);
-      }));
-      $("#loading").hide();
     }
 
   };
