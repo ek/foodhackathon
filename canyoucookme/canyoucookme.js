@@ -219,8 +219,7 @@ if (Meteor.isClient) {
         m = data.matches[0];
         
         if(m.smallImageUrls.length>0) {
-          m.image_url = m.smallImageUrls[0];
-          m.image_url = m.image_url.replace('.s.jpg','.xl.jpg');
+          m.image_url = m.smallImageUrls[0].replace('s.jpg','xl.jpg');
         }
         
         // insert template
