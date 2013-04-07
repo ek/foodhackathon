@@ -2,12 +2,51 @@
 .unselected {
   display: none;
 }#logo {position: relative; width:40%; border-style:solid;border-width:1px;padding-top:5%;padding-right:5%;}
+#logo {position: relative; width:40%; border-style:solid;border-width:1px;padding-top:5%;padding-right:5%;}
 #table {position: relative; width:80%; height: auto; border-style:solid; border-width:1px; margin-left:auto; margin-right: auto; margin-top:5%; }
 #left{position:absolute;top:50%; left:-5%; }
 #right{position:absolute; top:50%; right:-5%;}
-<<<<<<< HEAD
-=======
 #items ul{list-style: none;}
 #items ul li{display: inline; padding-left:2%;padding-right: 2%; padding-top: 1%; padding-bottom: 1%; }
 .menu{border-style: solid; border-width: 1px; width: 20%; }
->>>>>>> added templates for STEPS and MENU
+<<<<<<< HEAD
+
+=======
+>>>>>>> c4d2e37b62c4c89c8a3833b46f015fd18af7b39c
+#start_button{width:30%; margin-left: auto; margin-right: auto; background-color: #FF3600; border-style: solid; border-width: 1px;-moz-border-radius: 25px;
+border-radius: 25px; color: #ffffff; padding: 10px 15px; font-size: 32px; line-height: 42px; font-family: "aw-conqueror-carved-one", sans-serif; border:0;}
+#start_button:hover{width:30%; margin-left: auto; margin-right: auto; background-color: #FF6700; border-style: solid; border-width: 1px;-moz-border-radius: 25px;
+border-radius: 25px; color: #ffffff;}
+<<<<<<< HEAD
+
+#start_button{width:30%; margin-left: auto; margin-right: auto; background-color: #C0C0C0; border-style: solid; border-width: 1px;-moz-border-radius: 15px;
+border-radius: 15px;}
+#nav {position: relative; left: -3%; width:100%;}
+#step {position: relative; width:100%;}
+#choose h4{text-align: center; font-size: 2em}
+#recipe{position: relative; padding-left: 10%}
+
+
+=======
+#nav {position: absolute; left:5%; top:40%; width:80%;}
+#step {position: relative; padding-left: 10%}
+#step h4{text-align: center; font-size: 2em}
+#recipe{position: relative; padding-left: 10%}
+#banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 0 !important;
+  padding: 0 !important;
+  top: -25px;
+}
+#headcontainer header {
+  background: white;
+  background: rgba(255,255,255,0.95);
+}
+#maincontent {
+  background: white;
+  background: rgba(255,255,255,0.95);
+}
+>>>>>>> c4d2e37b62c4c89c8a3833b46f015fd18af7b39c

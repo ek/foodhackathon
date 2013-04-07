@@ -133,17 +133,21 @@ img, object, embed {
 max-width: 100%;
 }
 
-#banner {/* This centers the image */
+/*
+#banner {
 display: block;
 margin-left: auto;
 margin-right: auto;
 margin-top: 25px;
-/* This adds the border */
 padding:4px;
 border:double;
 border-color: #999;
 border-width: 3px;
 background-color:#fff;
+}
+*/
+#banner {
+  border: 0;
 }
 
 img {
@@ -151,7 +155,7 @@ img {
 }
 
 .header{
-	width: 96%;
+	width: 36%;
 	height: 390px;
 	background-color: #fff;
 	padding-bottom: 20px;
@@ -223,7 +227,7 @@ line-height: 25px;
 h1 {
 	font-family: "aw-conqueror-carved-one", sans-serif;
 	font-weight: 300;
-	font-size: 36px;
+	font-size: 52px;
 	line-height: normal;
 	color: #000;
 }
@@ -244,7 +248,8 @@ h3 {
 
 #title {
 	text-align: center;
-	color: #999;
+	color: #000000;
+  font-size: 82px;
   font-family: "adelle";
 } 
 
@@ -252,8 +257,7 @@ h3 {
 #subtitle {
 	text-align: center;
 	font-size: 28px;
-	font-style:italic;
-	color: #999;
+	color: #FF3600;
 }
 
 #bodytext {
@@ -283,9 +287,6 @@ font-size: 21px;
 color: #333;
 }
 
-h1 a {
-color: #333;
-}
 
 /*  SECTIONS  */
 .section {

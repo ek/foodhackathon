@@ -93,25 +93,26 @@
 
 <body>
   
+  <img src="/images/cover.jpg" id="banner" />
+
   <div id="skiptomain"><a href="#maincontent">skip to main content</a></div>
 
   <div id="wrapper">
 
   <div id="headcontainer">
     <header>
-      <h1 id="title">Unhungry.me</h1>
+      <h1 id="title">unHungry.me</h1>
       <h3 id="subtitle">Cook what's in your kitchen.</h3>
-      <img src="/images/cover.jpg" id="banner" />
     </header>
   </div>
 
   <div id="maincontentcontainer">
     <div id="maincontent">
       {{>introduction}}
-    </div>
-  </div>
-
-  <div id="arrows" style="display:none;">
+<<<<<<< HEAD
+   
+=======
+      <div id="arrows" style="display:none;">
     <a href="#" id="previous">
       Previous
     </a>
@@ -119,6 +120,7 @@
       Next
     </a>
   </div>
+>>>>>>> c4d2e37b62c4c89c8a3833b46f015fd18af7b39c
 
   <div id="steps" style="display:none;">
     Steps Go Here
@@ -129,14 +131,15 @@
     <h5>Loading Recipes</h5>
   </div>
 
-
+ </div>
+  </div>
 
 
   <div id="footercontainer">
 
     <footer class="group">
 
-    <p style="float: left";>How it Works</p>
+    <a href="/howitworks.html" <p style="float: left";>How it Works</p></a>
     <p style="float: right";>Unhungry.me ©2013</p>
       
     </footer>
@@ -190,8 +193,10 @@
         <br>
         <h2>3. You Vote</h2>
         <h3>On your favorite recipe and start cooking!</h3>
-        <br>
-        <a href="#"><h1 id="start_button" style="text-transform: uppercase;">Start Cooking</h1></a>
+        <br />
+        <br />
+        <a href="#" id="start_button" style="text-transform: uppercase;">Start Cooking</a>
+        <br /><br />
     </div>
     </div>
 
@@ -201,53 +206,50 @@
 <template name="step">
 
 
-  <div class="section group">
-  <div class="step">
-    <h4>{{name}}</h4>
-  <div class="col span_1_of_3">
+  <div class="section group" >
+    <div class="step" id="choose">
+      <h4>Choose a {{name}}</h4>
+      <div class="col span_1_of_3" id="step">
   
-    <div class="step_ingredients section group">
-      {{#each ingredients}}
-        <div class="col span_1_of_3">
-          <a href="#" id="{{shortname}}" class="ingredient">
-            <img src="/images/ingredients/_{{shortname}}.jpg" />
-            <br />
-            {{name}}
-            <span class="
-              {{#if selected}}
-                selected
-              {{else}}
+          <div class="step_ingredients section group">
+            {{#each ingredients}}
+            <div class="col span_1_of_3">
+              <a href="#" id="{{shortname}}" class="ingredient">
+              <img src="/images/ingredients/_{{shortname}}.jpg" />
+               <br />
+               {{name}}
+                <span class="
+                 {{#if selected}}
+                   selected
+                 {{else}}
                 unselected
-              {{/if}}
-              ">
-              <span>Selected!</span>
-            </span>
-        </div>
+                 {{/if}}
+                 ">
+                 <span>Selected!</span>
+                 </span>
+              </div>
       {{/each}}
-<<<<<<< HEAD
-    </div>
-=======
     </ul>
+    </div>
     <div class="section group">
   <div class="col span_1_of_3">
   &nbsp;</div>
-  <div class="col span_1_of_3">
-    <div style="float:left;">
-    <img src="img/arrowlt.png" width="32" height="92"></div>
-  <div style="float:right;">
-    <img src="img/arrowrt.png" width="32" height="92"></div>
+  <div class="col span_1_of_3" id="nav">
+    <div style="float:left;">  <a href="#" >
+  <img id="previous" src="img/arrowlt.png" width="32" height="92"></a>
     </div>
-  <div class="col span_1_of_3">
-  &nbsp;</div>
+  <div style="float:right;">
+    <a href="#"> <img id="next" src="img/arrowrt.png" width="32" height="92"></a></div>
+ 
 
       </div>
->>>>>>> added nav arrows to step template
   </div>
-
+    </div>
+    </div>
 </template>
 
 <template name="recipe">
-  <div class="recipe">
+  <div class="recipe" id="recipe">
     <h2>{{recipeName}}</h1>
     <div class="attributes">
       <img src="{{image_url}}" />
