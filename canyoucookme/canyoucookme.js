@@ -20,6 +20,7 @@ if (Meteor.isClient) {
       $("#steps").show();
       $("#introduction").hide();
       $('#headcontainer').hide();
+      $('#banner').hide();
     }
   });
 
@@ -39,6 +40,7 @@ if (Meteor.isClient) {
       yummly.callYummlyAPI();
       $("#arrows").hide();
       $("#loading").show();
+      $('#banner').show();
     }
 
     currentStepNumber = stepNumber;
