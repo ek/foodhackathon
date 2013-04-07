@@ -6,6 +6,7 @@ if (Meteor.isClient) {
       $("#arrows").show();
       $("#steps").show();
       $("#introduction").hide();
+      $('#headcontainer').hide();
     }
   });
 
@@ -16,6 +17,7 @@ if (Meteor.isClient) {
     if(stepNumber == -1) {
       // return to introduction
       $("#introduction").show();
+      $('#headcontainer').show();
       $("#steps").hide();
       $("#arrows").hide();
     }
@@ -154,21 +156,21 @@ if (Meteor.isClient) {
       }).done(function(data) {
         yummly.recipesHandler(data);
       });
-
+      
     },
 
     recipesHandler: function(data) {
       console.log(data);
       htmlString = "";
-      for(i=0;i<data.matches.length;i++) {
-        m = data.matches[i];
+      // for(i=0;i<data.matches.length;i++) {
+        m = data.matches[0];
         m.image_url = m.smallImageUrls[0];
         m.image_url = m.image_url.replace('.s.jpg','.xl.jpg');
         // insert template
         $("#steps").append(Meteor.render(function() {
           return Template.recipe(m);
         }));
-      }
+      // }
       $("#loading").show();
     }
 
