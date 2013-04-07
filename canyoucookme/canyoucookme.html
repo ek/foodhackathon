@@ -1,13 +1,90 @@
 <head>
-  <title>canyoucookme</title>
+  <title>unHungry.Me</title>
 </head>
 
 <body>
-  {{> hello}}
+  {{>introduction}}
+  
+  <div id="arrows" style="display:none;">
+    <a href="#" id="previous">
+      Previous
+    </a>
+    <a href="#" id="next">
+      Next
+    </a>
+  </div>
+
+  <div id="steps" style="display:none;">
+    Steps Go Here
+  </div>
+
+  <div id="loading" style="display:none;">
+    <img src="/images/ajax-loader.gif" />
+    <h5>Loading Recipes</h5>
+  </div>
+
 </body>
 
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
+<template name="introduction">
+  <div id="introduction">
+    <h1>UnHungry.Me</h1>
+    <h2>Cook what's in your kitchen</h2>
+    <div class="explaination">
+      <h3>How it works:</h3>
+      <ol>
+        <li>Tell us what is in your kitchen.</li>
+        <li>We instantly show you great recipes you can cook.</li>
+        <li>Cook and enjoy!</li>
+      </ol>
+    </div>
+    <a href="#" id="start_button">
+      Start!
+    </a>
+  </div>
 </template>
+
+<template name="step">
+  <div class="step">
+    <h4>{{name}}</h4>
+    <ul class="step_ingredients">
+      {{#each ingredients}}
+        <p>
+          <a href="#" id="{{shortname}}" class="ingredient">
+            <img src="/images/ingredients/{{shortname}}.jpg" />
+            <br />
+            {{name}}
+            <span class="
+              {{#if selected}}
+                selected
+              {{else}}
+                unselected
+              {{/if}}
+              ">
+              <span>Selected!</span>
+            </span>
+        </p>
+      {{/each}}
+    </ul>
+  </div>
+</template>
+
+<template name="recipe">
+  <div class="recipe">
+    <h2>{{recipeName}}</h1>
+    <div class="attributes">
+      {{#each smallImageUrls}}
+        <img src="{{.}}" />
+      {{/each}}
+      <h3>Source: {{sourceDisplayName}}</h3>
+      <h3>Cook Time: {{totalTimeInSeconds}} seconds<h3>
+      <h3>Rating: {{rating}}</h3>
+      <hr />
+      <h4>Ingredients:</h4>
+      <ul>
+        {{#each ingredients}}
+          <li>{{.}}</li>  
+        {{/each}}
+      </ul>
+  </div>
+</template>
+
