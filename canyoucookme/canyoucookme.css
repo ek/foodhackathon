@@ -14,8 +14,8 @@ border-radius: 25px; color: #ffffff; padding: 10px 15px; font-size: 32px; line-h
 #start_button:hover{width:30%; margin-left: auto; margin-right: auto; background-color: #FF6700; border-style: solid; border-width: 1px;-moz-border-radius: 25px;
 border-radius: 25px; color: #ffffff;}
 
-#nav {position: absolute; left: -5%; top: 100px; width:110%; z-index: 1; }
-
+#nav {position: absolute; left: 25%; top: 20px; width:50%; z-index: 1; }
+#nav img { height: 42px; }
 #next {
   position: relative;
   float: right;
@@ -35,7 +35,7 @@ border-radius: 25px; color: #ffffff;}
 
 #step {position: relative; width:100%;}
 
-#choose h4{text-align: center; font-size: 2em; padding-top: 50px;}
+#choose h4{text-align: center; line-height: 35px; font-size: 52px; padding-top: 0px; margin-bottom: 20px; }
 #recipe{position: relative; padding-left: 10%}
 #banner {
   position: absolute;
@@ -55,3 +55,25 @@ border-radius: 25px; color: #ffffff;}
   background: rgba(255,255,255,0.95);
 }
 #title{padding-top: 0px;}
+
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ 
+.clearfix {
+  display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+  display: block;
+}
+ 
+* html .clearfix {
+  height: 1%;
+}
