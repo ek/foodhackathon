@@ -233,15 +233,13 @@
 </template>
 
 <template name="recipe">
-    <div id="title"><a href="canyoucookme.html">
-    <h1 id="title" style="font-size:25px">unHungry.me</h1>
-      <h3 id="subtitle" style="font-size:20px">Cook what's in your kitchen.</h3></a>
-    </div>
- <div id="maincontent">
+  
+
   <div class="recipe" id="recipe">
     <h2>{{recipeName}}</h1>
     <div class="attributes">
       <img src="{{image_url}}" />
+      <div id="info">
       <h3>Source: {{sourceDisplayName}}</h3>
       <h3>Cook Time: {{totalTimeInSeconds}} seconds<h3>
       <h3>Rating: {{rating}}</h3>
@@ -252,7 +250,9 @@
           <li>{{.}}</li>
         {{/each}}
       </ul>
+    </div>
   </div>
 </div>
+
 </template>
 

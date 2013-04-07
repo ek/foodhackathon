@@ -55,3 +55,7 @@ border-radius: 25px; color: #ffffff;}
   background: rgba(255,255,255,0.95);
 }
 #title{padding-top: 0px;}
+#recipe{position: relative; width:80%; margin-left: auto; margin-right: auto;}
+
+#recipe img{position:absolute; padding-top: 5%; left: 0px;}
+#info {position: absolute; left:50%; padding-top: 5%;}
