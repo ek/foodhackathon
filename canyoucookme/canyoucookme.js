@@ -40,7 +40,6 @@ if (Meteor.isClient) {
       yummly.callYummlyAPI();
       $("#arrows").hide();
       $("#loading").show();
-      $('#banner').show();
     }
 
     currentStepNumber = stepNumber;

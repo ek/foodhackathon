@@ -1,7 +1,9 @@
 <head>
   <title>unHungry.Me</title>
+  <!--
   <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+  -->
   <script src="ingredient-list.js"></script>
 
   <!-- From Elance Guy -->
@@ -173,7 +175,7 @@
 
 <template name="introduction">
  <!-- From Elance Guy -->
-    <div id="introduction" style="text-align:center;">
+  <div id="introduction" style="text-align:center;">
     <h2>1. You Choose</h2>
         <h3>10 or fewer ingredients that you have on hand.</h3>
         <br>
@@ -185,21 +187,17 @@
         <br>
         <a href="#"><h1 id="start_button" style="text-transform: uppercase;">Start Cooking</h1></a>
     </div>
-    </div>
-
   </div>
 </template>
 
 <template name="step">
-
-
+  
   <div class="section group" >
     <div class="step" id="choose">
       <h4>Choose a {{name}}</h4>
       <div class="col span_1_of_3" id="step">
-  
-          <div class="step_ingredients section group">
-            {{#each ingredients}}
+        <div class="step_ingredients section group">
+          {{#each ingredients}}
             <div class="col span_1_of_3">
               <a href="#" id="{{shortname}}" class="ingredient">
               <img src="/images/ingredients/_{{shortname}}.jpg" />
@@ -212,27 +210,33 @@
                 unselected
                  {{/if}}
                  ">
-                 <span>Selected!</span>
-                 </span>
-              </div>
-      {{/each}}
-    </ul>
-    </div>
-    <div class="section group">
-  <div class="col span_1_of_3">
-  &nbsp;</div>
-  <div class="col span_1_of_3" id="nav">
-    <div style="float:left;">  <a href="#" >
-  <img id="previous" src="img/arrowlt.png" width="32" height="92"></a>
-    </div>
-  <div style="float:right;">
-    <a href="#"> <img id="next" src="img/arrowrt.png" width="32" height="92"></a></div>
- 
-
+                <span>Selected!</span>
+              </span>
+            </div>
+          {{/each}}
+        </ul>
       </div>
+    </div>
   </div>
+
+  <div class="section group">
+    <div class="col span_1_of_3">
+      &nbsp;
     </div>
+    <div class="col span_1_of_3" id="nav">
+      <div style="float:left;">
+        <a href="#" >
+          <img id="previous" src="img/arrowlt.png" width="32" height="92">
+        </a>
+      </div>
+      <div style="float:right;">
+        <a href="#">
+          <img id="next" src="img/arrowrt.png" width="32" height="92">
+        </a>
+      </div>
     </div>
+  </div>
+
 </template>
 
 <template name="recipe">

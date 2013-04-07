@@ -14,9 +14,10 @@ border-radius: 25px; color: #ffffff; padding: 10px 15px; font-size: 32px; line-h
 #start_button:hover{width:30%; margin-left: auto; margin-right: auto; background-color: #FF6700; border-style: solid; border-width: 1px;-moz-border-radius: 25px;
 border-radius: 25px; color: #ffffff;}
 
-#start_button{width:30%; margin-left: auto; margin-right: auto; background-color: #C0C0C0; border-style: solid; border-width: 1px;-moz-border-radius: 15px;
-border-radius: 15px;}
-#nav {position: relative; left: -3%; width:100%;}
+#nav {position: absolute; left: -10%; top: 100px; width:110%; z-index: 1; }
+.step_ingredients * {
+  z-index: 100;
+}
 #step {position: relative; width:100%;}
 #choose h4{text-align: center; font-size: 2em}
 #recipe{position: relative; padding-left: 10%}
