@@ -87,20 +87,20 @@ a.plain_button:active {
 a.plain_button.green,
 a.plain_button.green:link,
 a.plain_button.green:visited {
-  background-color: #3CCC00;
+  background-color: #319B00;
 }
 a.plain_button.green:hover,
 a.plain_button.green:active {
-  background-color: #319900;
+  background-color: #36AA00;
 }
 a.plain_button.orange,
 a.plain_button.orange:link,
 a.plain_button.orange:visited {
-  background-color: #FFB600;
+  background-color: #FF8B00;
 }
 a.plain_button.orange:hover,
 a.plain_button.orange:active {
-  background-color: #FF8B00;
+  background-color: #FFB600;
 }
 
 #nav {position: absolute; left: 0%; top: 20px; width:100%; z-index: 1; }
