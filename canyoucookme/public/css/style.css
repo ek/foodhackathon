@@ -250,6 +250,11 @@ h4 {
   font-size: 18px;
   line-height: normal;
 }
+h5 {
+  font-family: "aw-conqueror-carved-one", serif;
+  font-size: 16px;
+  line-height: normal;  
+}
 
 #title {
 	text-align: center;

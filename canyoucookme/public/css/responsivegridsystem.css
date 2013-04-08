@@ -282,8 +282,6 @@ background-color : #ccc; }
 				color: #333;
 				line-height: 1.5em;
 				position: relative;
-				border-top: 3px double #999;
-				border-bottom: 3px double #999;
 				padding-top: 25px;
 				padding-bottom: 25px;
 			}

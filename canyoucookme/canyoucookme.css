@@ -1,3 +1,11 @@
+/* @override 
+	http://localhost:3000/canyoucookme.css?b79f6f98a45f7ab38ca91d24e0a879c264d497a5
+	http://localhost:3000/canyoucookme.css?3a698959aabb6243626e6f6b6e0f1324b9d4a38b
+	http://localhost:3000/canyoucookme.css?858579c9305995de661bf898b5d6cbde0701857a
+	http://localhost:3000/canyoucookme.css?59a77a0da25fc6dea7bafbbfcad82e456eec4089
+	http://localhost:3000/canyoucookme.css?b7acc43d2e8166053168c67dd34e5f2cf7576820
+	http://localhost:3000/canyoucookme.css?e5cc4911807c317f83fff5c188dd1bee86d22481 */
+
 /* CSS declarations go here */
 .unselected {
   display: none;
@@ -8,10 +16,92 @@
 #right{position:absolute; top:50%; right:-5%;}
 
 .menu{border-style: solid; border-width: 1px; width: 20%; }
-#start_button{width:30%; margin-left: auto; margin-right: auto; background-color: #FF3600; border-style: solid; border-width: 1px;-moz-border-radius: 25px;
-border-radius: 25px; color: #ffffff; padding: 10px 15px; font-size: 32px; line-height: 42px; font-family: "aw-conqueror-carved-one", sans-serif; border:0;}
-#start_button:hover{width:30%; margin-left: auto; margin-right: auto; background-color: #FF6700; border-style: solid; border-width: 1px;-moz-border-radius: 25px;
-border-radius: 25px; color: #ffffff;}
+#start_button{
+	
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FF3600;
+	border-style: solid;
+	border-width: 1px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	color: #ffffff;
+	padding: 8px 22px;
+	font-size: 24px;
+	line-height: 34px;
+	font-family: "aw-conqueror-carved-one", sans-serif;
+	border:0;
+}
+#start_button:hover{
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #FF6700;
+	border-style: solid;
+	border-width: 1px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	color: #ffffff;
+}
+.next_steps {
+clear: both;
+margin: 10px 0;
+text-align: center;
+width: 100%;
+}
+.nutrition {
+clear: both;
+margin: 5px 0;
+text-align: center;
+width: 100%;
+}
+.next_steps h2,
+.nutrition h2 {
+  font-size: 18px !important;
+  text-align: center;
+}
+a.plain_button,
+a.plain_button:link,
+a.plain_button:visited {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FF3600;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #ffffff;
+  padding: 8px 22px;
+  font-size: 24px;
+  line-height: 34px;
+  border:0;
+  font-family: "aw-conqueror-carved-one", sans-serif;
+}
+a.plain_button:hover,
+a.plain_button:active {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #FF6700;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: #ffffff;
+  font-family: "aw-conqueror-carved-one", sans-serif;
+}
+a.plain_button.green,
+a.plain_button.green:link,
+a.plain_button.green:visited {
+  background-color: #3CCC00;
+}
+a.plain_button.green:hover,
+a.plain_button.green:active {
+  background-color: #319900;
+}
+a.plain_button.orange,
+a.plain_button.orange:link,
+a.plain_button.orange:visited {
+  background-color: #FFB600;
+}
+a.plain_button.orange:hover,
+a.plain_button.orange:active {
+  background-color: #FF8B00;
+}
 
 #nav {position: absolute; left: 0%; top: 20px; width:100%; z-index: 1; }
 #nav img { height: 42px; }
@@ -34,14 +124,14 @@ border-radius: 25px; color: #ffffff;}
 
 #step {position: relative; width:100%;}
 
-#choose h4{text-align: center; line-height: 35px; font-size: 52px; padding-top: 0px; margin-bottom: 20px; }
-#recipe{position: relative; padding-left: 10%}
+#choose h4{text-align: center; line-height: 35px; font-size: 42px; padding-top: 0px; margin-bottom: 20px; }
 #recipe img {
   width: 500px;
 }
 #recipe h2 {
   text-align: center;
   font-size: 38px;
+  margin-bottom: 15px;
 }
 .recipe ul.ingredient_list li {
   font-size: 15px;
@@ -50,6 +140,10 @@ border-radius: 25px; color: #ffffff;}
   font-family: "aw-conqueror-carved-one", serif;
   position:relative;
   clear: both;
+}
+.attributes {
+  clear: both;
+  margin-top: 20px;
 }
 #banner {
   position: absolute;
@@ -91,8 +185,26 @@ html[xmlns] .clearfix {
 * html .clearfix {
   height: 1%;
 }
-#recipe{top:-30px; position: relative; width:80%; height: 700px; margin-left: auto; margin-right: auto;}
-#recipe h2{text-align: center;}
+#recipe {
+position: relative;
+top: -25px;
+}
+#recipe h2 {
+text-align: center;
+}
+#recipe h1 {
+font-size: 58px;
+line-height: 68px;
+text-align: center;
+width: 100%;
+}
+#recipe .recipe_col {
+float: left;
+width: 48%;
+margin-right: 2%;
+margin-top: 20px;
+}
+.recipe_image {
+float: left;
+}
 #info ul li{display: block;}
-#recipe img{position:absolute; padding-top: 5%; left: 0px;}
-#info {position: absolute; left:58%; padding-top: 5%;}

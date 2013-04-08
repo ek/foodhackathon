@@ -181,16 +181,16 @@
  <!-- From Elance Guy -->
   <div id="introduction" style="text-align:center;">
     <h2>1. You Choose</h2>
-        <h3>10 or fewer ingredients that you have on hand.</h3>
-        <br>
-        <h2>2. We Curate</h2>
-        <h3>Three recipes based on what's in your kitchen.</h3>
-        <br>
-        <h2>3. You Vote</h2>
-        <h3>On your favorite recipe and start cooking!</h3>
-        <br>
-        <a href="#"><h1 id="start_button" style="text-transform: uppercase;">Start Cooking</h1></a>
-    </div>
+    <h3>10 or fewer ingredients that you have on hand.</h3>
+    <br />
+    <h2>2. We Curate</h2>
+    <h3>Three recipes based on what's in your kitchen.</h3>
+    <br />
+    <h2>3. You Vote</h2>
+    <h3>On your favorite recipe and start cooking!</h3>
+    <br /><br />
+    <a href="#" id="start_button" style="text-transform: uppercase;">Start Cooking</a>
+    <br /><br />
   </div>
 </template>
 
@@ -233,25 +233,71 @@
 </template>
 
 <template name="recipe">
-  
 
   <div class="recipe clearfix" id="recipe">
-    <h2>{{recipeName}}</h1>
-    <div class="attributes">
-      <img src="{{image_url}}" />
-      <div class="clearfix" id="info">
-      <h3>Source: {{sourceDisplayName}}</h3>
-      <h3>Cook Time: {{totalTimeInSeconds}} seconds<h3>
-      <h3>Rating: {{rating}}</h3>
+
+    <h1>{{name}}</h1>
+    
+    <div class="recipe_col">
+
+      <div class="recipe_image">
+        <img src="{{image_url}}" />
+      </div>
+
+    </div>
+
+    <div class="recipe_col">
+      
+      <div class="ingredients clearfix">
+        <ul class="ingredient_list clearfix">
+          <h4>Ingredients</h4>
+          {{#each ingredientLines}}
+            <li>{{.}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="attributes">
+        <hr />
+        <div id="info">
+          <h5>Source: {{source.sourceDisplayName}}</h5>
+          <h5>Servings: {{numberOfServings}}</h5>
+          {{#each attributes}}
+            <h5>{{key}}: {{#each value}}{{.}},{{/each}}</h5>
+          {{/each}}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="nutrition clearfix">
       <hr />
-      <h4>Ingredients:</h4>
-      <ul class="ingredient_list">
-        {{#each ingredients}}
-          <li>{{.}}</li>
+      <h4>Nutritional Estimates</h4>
+      <ul>
+        {{#each nutritionEstimates}}
+          <li>{{description}}: {{value}} {{unit.plural}}, </li>
         {{/each}}
       </ul>
     </div>
+
+    <div class="next_steps clearfix">
+      <hr />
+      <h2>Look good?</h2>
+      <a class="plain_button" href="{{source.sourceRecipeUrl}}" target="_new">
+        Read full recipe instructions
+      </a>
+      <br /><br />
+      <hr />
+      <br />
+      <h2>Want another recipe?</h2>
+      <a class="plain_button green" href="#" id="try_again">Search again with the same ingredients</a>
+      <br /><br />
+      <hr />
+      <br /><br />
+      <a class="plain_button orange" href="/" id="start_over">Start Over</a>
+    </div>
+
   </div>
+
 </div>
 
 </template>

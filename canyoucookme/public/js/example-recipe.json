@@ -1,0 +1,222 @@
+{
+  "attribution": {
+    "html": "<a href='http://www.yummly.com/recipe/Sweet-potato-quinoa-cakes-333384'>Sweet Potato Quinoa Cakes recipe</a> information powered by <img alt='Yummly' src='http://static.yummly.com/api-logo.png'/>",
+    "url": "http://www.yummly.com/recipe/Sweet-potato-quinoa-cakes-333384",
+    "text": "Sweet Potato Quinoa Cakes recipes: information powered by Yummly",
+    "logo": "http://static.yummly.com/api-logo.png"
+  },
+  "ingredientLines": [
+    "1 medium sweet potato (about 6 oz), peeled and chopped",
+    "1/2 red onion, diced",
+    "1/2 teaspoon salt",
+    "1/2 teaspoon pepper",
+    "2 garlic cloves, minced",
+    "1 tablespoon olive oil",
+    "1/2 cup cooked quinoa",
+    "1/4 cup whole wheat bread crumbs",
+    "1/4 cup finely grated parmesan cheese",
+    "2 tablespoons chopped fresh cilantro",
+    "2 tablespoons chopped fresh basil",
+    "1 large egg, lightly beaten",
+    "1 pint fresh blackberries, chopped",
+    "1/2 red onion, finely diced",
+    "1/2 jalapeno, finely diced",
+    "1/2 cup chopped cilantro",
+    "the juice of 1 lime",
+    "salt and pepper to taste",
+    "salt and pepper to taste"
+  ],
+  "flavors": {},
+  "nutritionEstimates": [
+    {
+      "attribute": "ENERC_KCAL",
+      "description": "Energy",
+      "value": 173.33,
+      "unit": {
+        "id": "fea252f8-9888-4365-b005-e2c63ed3a776",
+        "name": "calorie",
+        "abbreviation": "kcal",
+        "plural": "calories",
+        "pluralAbbreviation": "kcal"
+      }
+    },
+    {
+      "attribute": "FAT",
+      "description": "Total lipid (fat)",
+      "value": 5.56,
+      "unit": {
+        "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+        "name": "gram",
+        "abbreviation": "g",
+        "plural": "grams",
+        "pluralAbbreviation": "grams"
+      }
+    },
+    {
+      "attribute": "FASAT",
+      "description": "Fatty acids, total saturated",
+      "value": 1.40,
+      "unit": {
+        "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+        "name": "gram",
+        "abbreviation": "g",
+        "plural": "grams",
+        "pluralAbbreviation": "grams"
+      }
+    },
+    {
+      "attribute": "CHOLE",
+      "description": "Cholesterol",
+      "value": 0.00,
+      "unit": {
+        "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+        "name": "gram",
+        "abbreviation": "g",
+        "plural": "grams",
+        "pluralAbbreviation": "grams"
+      }
+    },
+    {
+      "attribute": "NA",
+      "description": "Sodium, Na",
+      "value": 2.37,
+      "unit": {
+        "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+        "name": "gram",
+        "abbreviation": "g",
+        "plural": "grams",
+        "pluralAbbreviation": "grams"
+      }
+    },
+    {
+      "attribute": "K",
+      "description": "Potassium, K",
+      "value": 0.35,
+      "unit": {
+        "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+        "name": "gram",
+        "abbreviation": "g",
+        "plural": "grams",
+        "pluralAbbreviation": "grams"
+      }
+    },
+    {
+      "attribute": "CHOCDF",
+      "description": "Carbohydrate, by difference",
+      "value": 27.01,
+      "unit": {
+        "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+        "name": "gram",
+        "abbreviation": "g",
+        "plural": "grams",
+        "pluralAbbreviation": "grams"
+      }
+    },
+    {
+      "attribute": "FIBTG",
+      "description": "Fiber, total dietary",
+      "value": 7.07,
+      "unit": {
+        "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+        "name": "gram",
+        "abbreviation": "g",
+        "plural": "grams",
+        "pluralAbbreviation": "grams"
+      }
+    },
+    {
+      "attribute": "SUGAR",
+      "description": "Sugars, total",
+      "value": 6.86,
+      "unit": {
+        "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+        "name": "gram",
+        "abbreviation": "g",
+        "plural": "grams",
+        "pluralAbbreviation": "grams"
+      }
+    },
+    {
+      "attribute": "PROCNT",
+      "description": "Protein",
+      "value": 5.33,
+      "unit": {
+        "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+        "name": "gram",
+        "abbreviation": "g",
+        "plural": "grams",
+        "pluralAbbreviation": "grams"
+      }
+    },
+    {
+      "attribute": "VITA_IU",
+      "description": "Vitamin A, IU",
+      "value": 3724.59,
+      "unit": {
+        "id": "ed46fe0c-44fe-4c1f-b3a8-880f92e30930",
+        "name": "IU",
+        "abbreviation": "IU",
+        "plural": "IU",
+        "pluralAbbreviation": "IU"
+      }
+    },
+    {
+      "attribute": "VITC",
+      "description": "Vitamin C, total ascorbic acid",
+      "value": 0.03,
+      "unit": {
+        "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+        "name": "gram",
+        "abbreviation": "g",
+        "plural": "grams",
+        "pluralAbbreviation": "grams"
+      }
+    },
+    {
+      "attribute": "CA",
+      "description": "Calcium, Ca",
+      "value": 0.12,
+      "unit": {
+        "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+        "name": "gram",
+        "abbreviation": "g",
+        "plural": "grams",
+        "pluralAbbreviation": "grams"
+      }
+    },
+    {
+      "attribute": "FE",
+      "description": "Iron, Fe",
+      "value": 0.00,
+      "unit": {
+        "id": "12485d26-6e69-102c-9a8a-0030485841f8",
+        "name": "gram",
+        "abbreviation": "g",
+        "plural": "grams",
+        "pluralAbbreviation": "grams"
+      }
+    }
+  ],
+  "images": [
+    {
+      "hostedLargeUrl": "http://i.yummly.com/Sweet-potato-quinoa-cakes-333384-295304.l.jpg",
+      "hostedSmallUrl": "http://i.yummly.com/Sweet-potato-quinoa-cakes-333384-295304.s.jpg"
+    }
+  ],
+  "name": "Sweet Potato Quinoa Cakes",
+  "yield": "makes 4 ",
+  "attributes": {
+    "course": [
+      "Side Dishes"
+    ]
+  },
+  "totalTimeInSeconds": null,
+  "rating": null,
+  "numberOfServings": 4,
+  "source": {
+    "sourceRecipeUrl": "http://www.howsweeteats.com/2012/05/sweet-potato-quinoa-cakes-with-blackberry-salsa/",
+    "sourceSiteUrl": "http://www.howsweeteats.com",
+    "sourceDisplayName": "How Sweet It Is"
+  },
+  "id": "Sweet-potato-quinoa-cakes-333384"
+}
