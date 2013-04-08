@@ -42,6 +42,11 @@
 	border-radius: 25px;
 	color: #ffffff;
 }
+#steps {
+  width: 200%;
+  left: -50%;
+  position: relative;
+}
 .next_steps {
 clear: both;
 margin: 10px 0;
@@ -83,6 +88,15 @@ a.plain_button:active {
   border-radius: 25px;
   color: #ffffff;
   font-family: "aw-conqueror-carved-one", sans-serif;
+}
+a#start_button.green,
+a#start_button.green:link,
+a#start_button.green:visited {
+  background-color: #319B00;
+}
+a#start_button.green:hover,
+a#start_button.green:active {
+  background-color: #36AA00;
 }
 a.plain_button.green,
 a.plain_button.green:link,
@@ -151,16 +165,17 @@ a.plain_button.orange:active {
   left: 0;
   border: 0 !important;
   padding: 0 !important;
-  top: -25px;
-  height: 670px;
+  width: 100%;
 }
 #headcontainer header {
   background: white;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255,255,255,1);
+  width: 44%;
 }
-#maincontent {
+#maincontentcontainer #maincontent {
   background: white;
-  background: rgba(255,255,255,0.95);
+  background: rgba(255,255,255,1);
+  width: 44%;
 }
 #title{padding-top: 0px;}
 

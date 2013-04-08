@@ -226,24 +226,28 @@ line-height: 25px;
 
 h1 {
 	font-family: "aw-conqueror-carved-one", sans-serif;
-	font-weight: 300;
+	font-weight: 600;
 	font-size: 52px;
 	line-height: normal;
 	color: #000;
+}
+h1 span {
+  font-weight: 300;
 }
 
 h2 {
 	font-family: "aw-conqueror-carved-one", sans-serif;
 	font-weight: 300;
-	font-size: 32px;
+	font-size: 26px;
 	line-height: normal;
 	color: #000;
 }
 
 h3 {
-	font-family: "aw-conqueror-carved-one", serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	line-height: normal;
+  font-weight: normal;
 }
 h4 {
   font-family: "aw-conqueror-carved-one", serif;
@@ -256,18 +260,19 @@ h5 {
   line-height: normal;  
 }
 
-#title {
+h1#title {
 	text-align: center;
 	color: #000000;
-  font-size: 82px;
+  font-size: 52px;
   font-family: "adelle";
 } 
 
-
-#subtitle {
+h3#subtitle {
 	text-align: center;
-	font-size: 28px;
+	font-size: 22px;
+  line-height: 52px;
 	color: #FF3600;
+  font-family: "aw-conqueror-carved-one", sans-serif !important;
 }
 
 #bodytext {
