@@ -59,6 +59,9 @@ margin: 5px 0;
 text-align: center;
 width: 100%;
 }
+#footercontainer {
+border-top: 1px solid #cccccc;
+}
 .next_steps h2,
 .nutrition h2 {
   font-size: 18px !important;
